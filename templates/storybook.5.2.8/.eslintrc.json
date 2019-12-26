@@ -1,0 +1,22 @@
+{
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "rules": {
+      "react/jsx-props-no-spreading": [0],
+      "template-curly-spacing": ["error", "always"],
+      "react/jsx-curly-spacing": ["error", "always"],
+      "space-in-parens": ["error", "always"],
+      "computed-property-spacing": ["error", "always"],
+      "array-bracket-spacing": ["error", "always"],
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "jsx-a11y/anchor-is-valid": [ "error", {
+        "components": [ "Link" ],
+        "specialLink": [ "to", "hrefLeft", "hrefRight" ],
+        "aspects": [ "noHref", "invalidHref", "preferButton" ]
+      }],
+      "import/no-named-as-default": 0
+    },
+    "globals": {
+      "window": true
+    }
+}
