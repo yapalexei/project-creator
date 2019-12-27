@@ -33,6 +33,7 @@
     "@storybook/react": "^5.2.8",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.6",
+    "dotenv-webpack": "^1.7.0",
     "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-loader": "^3.0.3",

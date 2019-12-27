@@ -30,6 +30,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({template: './src/index.html'})
+    new HtmlWebpackPlugin({template: './src/index.html'}),
+    new Dotenv({ path: './process.env' }) // for environment variables
   ]
 }

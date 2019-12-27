@@ -1,5 +1,14 @@
 const path = require('path');
-module.exports = ( { config } ) => ( {
+const Dotenv = require('dotenv-webpack');
+const webpack = require('webpack');
+module.exports = ( { config } ) => {
+  const indexOfDefPlug = config.plugins.findIndex(item => item instanceof webpack.DefinePlugin);
+  if (indexOfDefPlug > -1) config.plugins.splice(indexOfDefPlug, 1);
+  config.plugins.push(new Dotenv({
+    path: './process.env',
+    expand: true,
+  }));
+  return {
   ...config,
   module: {
     ...config.module,
@@ -33,4 +42,4 @@ module.exports = ( { config } ) => ( {
   node: {
     fs: "empty"
   }
-} );
+} };
