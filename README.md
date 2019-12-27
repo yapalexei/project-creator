@@ -2,7 +2,7 @@
 
 This is a simple project generator for some of the most common experiments I work on from time to time. So far I only really have a few but it will grow overtime.
 
-## Genreators
+## Generators
 
 - webpack: A simple project that uses webpack as a builder.
 - webpack-mapbox-sample: A sample mapbox project for exploring mapbox related work.
@@ -24,7 +24,7 @@ This will start you with the following terminal question:
 
 ```
 ? What project template would you like to generate? (Use arrow keys)
-❯ webpack 
+❯ webpack
   webpack-mapbox-sample
 ```
 
