@@ -23,8 +23,10 @@ generate
 This will start you with the following terminal question:
 
 ```
-? What project template would you like to generate? (Use arrow keys)
-❯ webpack
+? What project template would you like to generate? 
+❯ socket-io-chat-app 
+  storybook.5.2.8 
+  webpack 
   webpack-mapbox-sample
 ```
 
