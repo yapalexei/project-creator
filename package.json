@@ -1,6 +1,6 @@
 {
   "name": "project-creator",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Helper to create simple projects from templates defined within the templates folder. 100% credit goes to Harriet Ryder for her blog: https://medium.com/northcoders/creating-a-project-generator-with-node-29e13b3cd309",
   "author": "Alexei Yagolnikov",
   "license": "MIT",
@@ -8,7 +8,11 @@
   "bin": {
     "generate": "./index.js"
   },
-  "scripts": {},
+  "scripts": {
+    "install-generator": "npm install -g .",
+    "update-generator": "npm run uninstall-generator && npm install -g .",
+    "uninstall-generator": "npm uninstall -g project-creator"
+  },
   "dependencies": {
     "colors": "^1.4.0",
     "inquirer": "^7.0.1"

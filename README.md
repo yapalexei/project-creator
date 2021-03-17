@@ -23,11 +23,12 @@ generate
 This will start you with the following terminal question:
 
 ```
-? What project template would you like to generate? 
-❯ socket-io-chat-app 
-  storybook.5.2.8 
-  webpack 
+? What project template would you like to generate?
+❯ socket-io-chat-app
+  storybook.5.2.8
+  webpack
   webpack-mapbox-sample
+  webpack-three-js-starter
 ```
 
 Select `webpack` or `webpack-mapbox-sample` and the next question will ask you to name the project (folder for now).
